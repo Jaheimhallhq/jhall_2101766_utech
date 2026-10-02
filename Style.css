@@ -1,0 +1,52 @@
+:root {
+    --primary-color:black;
+    --secondary-color:gold;
+    --text-color:gold;
+    --font-family:'PT Serif', Serif;
+}
+
+header{
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: 3px;
+    border-radius: 15px;
+}  
+
+
+nav{
+    background-color:gold;
+    padding: 0px;
+    text-align: center;
+
+}
+
+nav a{
+    color:var(--primary-color);
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: azure;
+}
+
+
+body{
+    margin: 0;
+    background-color:var(--secondary-color);
+    font-family: PT Serif, serif;
+    line-height: 1.5;
+}
+
+h2, h3{
+    background-color: var(--primary-color);
+    color: var(--text-color);
+     border: 3px;
+    border-radius: 15px;
+}
+
+section{
+    background-color: azure;
+    border: 3px solid;
+    border-radius: 15px;
+}
