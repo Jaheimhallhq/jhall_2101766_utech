@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Coding Conf 2026</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Coding Conf 2026</h1>
+        <img class="logo" src="../assets/Neon.png" alt="Logo" width="122" height="101">
+    </header>
+
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="login.html">Register</a>
+        </div>
+    </nav>
+
+    <h2>Register Below</h2>
+    <div>
+        <p>Fill in your details to generate your Coding Conf ticket. Every field is required.</p>
+
+        <form id="registration-form" novalidate>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullName" maxlength="60" autocomplete="name" required aria-describedby="fullname-error">
+            <span id="fullname-error" class="error" aria-live="polite"></span>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error email-hint">
+            <span id="email-error" class="error" aria-live="polite"></span>
+            <p id="email-hint">Format: jaheimhall11@gmail.com</p>
+
+            <label for="github">GitHub Username:</label>
+            <input type="text" id="github" name="github" required aria-describedby="github-error github-hint">
+            <span id="github-error" class="error" aria-live="polite"></span>
+            <p id="github-hint">Put the @ sign first, for example @jaheimhallhq</p>
+
+            <label for="avatar">Profile Picture:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" required aria-describedby="avatar-error avatar-hint">
+            <span id="avatar-error" class="error" aria-live="polite"></span>
+            <p id="avatar-hint">JPEG or PNG, under 500 KB</p>
+
+            <img id="avatar-preview" class="avatar-preview" width="96" height="96" hidden alt="Preview of your selected profile picture">
+
+            <p id="form-status" role="alert"></p>
+
+            <input type="submit" id="submit-button" value="Generate my ticket">
+            <p>Your details stay in this browser. Nothing is sent to a server.</p>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Coding Conf Papine, Kgn All rights reserved</p>
+    </footer>
+
+    <script src="../js/validation.js"></script>
+</body>
+</html>
